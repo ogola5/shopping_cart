@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/checkout.css';
 
 export default function CheckoutPage({ cartItems, total, placeOrder }) {
   const [customerDetails, setCustomerDetails] = useState({

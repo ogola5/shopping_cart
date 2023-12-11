@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../../styles/product.css';
 export default function ProductDetailPage() {
   // Sample array of products with unique IDs and dummy image paths
   const products = [

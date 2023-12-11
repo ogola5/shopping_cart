@@ -1,0 +1,44 @@
+/* Checkout.css */
+
+.checkout-page {
+  margin: 20px;
+  padding: 10px;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cart-summary {
+  margin-bottom: 20px;
+  /* Add more styling for the cart summary section */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
