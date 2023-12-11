@@ -1,0 +1,17 @@
+/* Home.css */
+
+.home-page {
+  margin: 20px;
+  padding: 10px;
+}
+
+.home-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px;
+}
