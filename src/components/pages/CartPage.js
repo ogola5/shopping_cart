@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/cart.css';
+import '../styles/cart.css';
 export default function CartPage({ cartItems, removeFromCart, adjustQuantity }) {
   return (
     <div className="cart-page">
