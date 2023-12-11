@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductDetailPage from './ProductDetailPage'; 
-import '../styles/Home.css';
+import '../styles/home.css';
 
 
 export default function HomePage({ products }) {
