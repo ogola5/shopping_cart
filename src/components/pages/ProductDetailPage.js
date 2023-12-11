@@ -1,95 +1,24 @@
 import React, { useState } from 'react';
 import '../styles/product.css';
+
 export default function ProductDetailPage() {
-  // Sample array of products with unique IDs and dummy image paths
   const products = [
-    // Add 10 products here with id, name, description, price, imageUrl, availability
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    },
-    {
-      id: 1,
-      name: 'Example Product',
-      description: 'This is a detailed description of the Example Product.',
-      price: 29.99,
-      imageUrl: 'path_to_dummy_image', // replace with your image path
-      availability: 'In Stock'
-    }
+    // Add 10 unique products here with id, name, description, price, imageUrl, availability
+    { id: 1, name: 'Product 1', description: 'Description for Product 1', price: 29.99, imageUrl: 'path_to_image_1', availability: 'In Stock' },
+    { id: 2, name: 'Product 2', description: 'Description for Product 2', price: 35.99, imageUrl: 'path_to_image_2', availability: 'In Stock' },
+    { id: 1, name: 'Product 3', description: 'Description for Product 1', price: 29.99, imageUrl: 'path_to_image_1', availability: 'In Stock' },
+    { id: 2, name: 'Product 4', description: 'Description for Product 2', price: 35.99, imageUrl: 'path_to_image_2', availability: 'In Stock' },
+    { id: 1, name: 'Product 5', description: 'Description for Product 1', price: 29.99, imageUrl: 'path_to_image_1', availability: 'In Stock' },
+    { id: 2, name: 'Product 6', description: 'Description for Product 2', price: 35.99, imageUrl: 'path_to_image_2', availability: 'In Stock' },
+    { id: 1, name: 'Product 7', description: 'Description for Product 1', price: 29.99, imageUrl: 'path_to_image_1', availability: 'In Stock' },
+    { id: 2, name: 'Product 8', description: 'Description for Product 2', price: 35.99, imageUrl: 'path_to_image_2', availability: 'In Stock' },
+    { id: 1, name: 'Product 9', description: 'Description for Product 1', price: 29.99, imageUrl: 'path_to_image_1', availability: 'In Stock' },
+    { id: 2, name: 'Product 10', description: 'Description for Product 2', price: 35.99, imageUrl: 'path_to_image_2', availability: 'In Stock' },
+    // ... Add more products up to id: 10
   ];
 
-  // State for tracking cart count
   const [cartCount, setCartCount] = useState(0);
 
-  // Function to handle adding to cart
   const addToCart = () => {
     setCartCount(cartCount + 1);
   };
@@ -113,4 +42,5 @@ export default function ProductDetailPage() {
     </div>
   );
 }
+
 
