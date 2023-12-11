@@ -4,6 +4,9 @@ import '../styles/home.css';
 
 
 export default function HomePage({ products }) {
+    if (!products || products.length === 0) {
+        return <div>No products found.</div>;
+    }
   return (
     <div className="home-page">
       <h1>Welcome to Our Store</h1>
